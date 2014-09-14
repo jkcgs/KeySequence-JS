@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <!-- 
+      KeySequence example
+      By makzk <me@makzk.com>
+    -->
+    <head>
+        <title>Key sequence test</title>
+        <meta charset="utf-8" />
+        <script type="text/javascript" src="keysequence.js"></script>
+    </head>
+    <body>
+        <p>Type the Konami Code</p>
+        <script type="text/javascript">
+        var done = false; // Set a flag to check if the sequence is done
+        var seq = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]; // The sequence (konami code)
+
+        // Bind a function to the keysequence
+        var ks = new KeySequence(seq, function() {
+            console.log("Sequence pressed");
+            if(!done) {
+                done = true;
+                document.body.innerHTML = '<iframe width="420" height="315" src="//www.youtube.com/embed/9sX3fjpkFwk" frameborder="0" allowfullscreen></iframe>';
+            }
+        });
+
+        // Init the 
+        ks.start();
+        </script>
+        </script>
+    </body>
+</html>
