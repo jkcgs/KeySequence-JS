@@ -2,6 +2,9 @@
  * KeySequence.js
  * By makzk <me@makzk.com>
  * This library detects a key sequence and do something.
+ * 
+ * Licence: use this as you want, be cool, and have fun.
+ * September, 2014.
  *
  * function KeySequence(sequence, onready, timeout, onsequencefollow), where:
  *
